@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppRelogio.MainPage">
+
+    <StackLayout x:Name="stackPrincipal"
+        Orientation="Vertical"
+           >
+        
+        <StackLayout x:Name="PrimeiroStack"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="FillAndExpand"
+                >
+
+        <Label x:Name="lblHoras" TextColor="Black" Text="00:00:00"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+             
+               FontSize="80" >
+        </Label>
+    </StackLayout>
+
+        <StackLayout x:Name="SegundoStack"
+            VerticalOptions="End"
+                        HorizontalOptions="FillAndExpand"
+                     Orientation="Horizontal"
+                     
+                     Padding="5">
+                           
+            
+         <Button x:Name ="bntAzul" BackgroundColor="Blue"
+                    HorizontalOptions="FillAndExpand"
+                 Clicked="BntAzul_Clicked"></Button>
+            
+            
+        <Button x:Name="bntAmarelo" BackgroundColor="Yellow"
+                HorizontalOptions="FillAndExpand"
+                Clicked="BntAmarelo_Clicked"></Button>
+            
+        <Button x:Name="bntPreto" BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                Clicked="BntPreto_Clicked"></Button>
+            
+        <Button x:Name="bntVerde" BackgroundColor="Green"
+                HorizontalOptions="FillAndExpand"
+                Clicked="BntVerde_Clicked"></Button>
+               
+    </StackLayout>
+    </StackLayout>
+
+</ContentPage>
